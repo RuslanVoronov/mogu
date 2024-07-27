@@ -1,0 +1,97 @@
+.main {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+
+    margin: auto;
+
+    color: #222FDC;
+}
+
+.main__container {
+    max-width: 644px;
+}
+
+.main__title {
+    margin: 0;
+    
+    font-family: 'Oswald';
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 80px;
+}
+
+.main__text {
+    font-family: 'Inter';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.form__info-items {
+    list-style: none;
+    display: flex;
+
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+
+}
+
+.form__info-item {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 0 16px;
+    height: 48px;
+    margin-right: 12px;
+
+    background-color: #F7F7F7;
+}
+
+.main__dialogue {
+    width: 644px;
+    height: 644px;
+    border-radius: 30px;
+
+    background-color: #222FDC;
+}
+
+.main__form {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    border: solid 2px #222FDC;
+    border-radius: 30px;
+    max-width: 596px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.form__input {
+    border: none;
+    width: 100%;
+    padding: 30px 0 30px 24px;
+
+    font-family: 'Inter';
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: left;
+
+}
+
+.form__button {
+    border: none;
+    border-radius: 30px;
+    padding: 26px 32px;
+    width: 208px;
+    height: 100%;
+
+    color: white;
+    background-color: #222FDC;
+
+}

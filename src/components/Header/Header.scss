@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 80px;
+    padding: 8px 64px;
+
+    div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.header__logo {
+    height: 64px;
+}
+
+.header__nav {}
+
+.header__nav-items {
+    display: flex;
+    padding: 0;
+    margin-left: 24px;
+    list-style: none;
+}
+
+.header__nav-item {
+    padding: 0 16px;
+
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 48px;
+
+    text-decoration: none;
+    color: #5B605C;
+}
+
+.header__button {
+    width: 129px;
+    height: 64px;
+    padding: 0px 32px;
+    border-radius: 30px;
+
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 48px;
+
+    background-color: black;
+    color: white;
+}
