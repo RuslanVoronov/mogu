@@ -1,6 +1,10 @@
 .feedback {
+    z-index: 2;
     position: relative;
     padding: 80px 64px 82px;
+    border-radius: 30px;
+    
+    background-color: white;
 }
 
 .feedback__form {
