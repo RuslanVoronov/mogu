@@ -17,10 +17,8 @@ function Main() {
                         <li className='form__info-item'>2000+ пользователей</li>
                     </ul>
                     <form className='main__form'>
-                        <input placeholder='Электронная почта' className='form__input'>
-
-                        </input>
-                        <button className='form__button'>Начать</button>
+                        <input placeholder='Электронная почта' className='form__input form__input_theme_blue'></input>
+                        <button className='form__button form__button_theme_blue'>Начать →</button>
                     </form>
                 </div>
                 <div className='main__dialogue'>

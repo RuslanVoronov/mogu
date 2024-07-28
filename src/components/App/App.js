@@ -1,10 +1,12 @@
+import Feedback from '../Feedback/Feedback';
 import Main from '../Main/Main';
-import './App.scss';
+import '../Form/Form.scss';
 
 function App() {
     return (
         <div className="App">
             <Main />
+            <Feedback />
         </div>
     );
 }
