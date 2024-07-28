@@ -3,7 +3,7 @@
     position: relative;
     padding: 80px 64px 82px;
     border-radius: 30px;
-    
+
     background-color: white;
 }
 
@@ -20,4 +20,81 @@
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+.cat__eye {
+    position: absolute;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+
+.cat__eye_type_right {
+    top: 159px;
+    left: 202px;
+    animation-name: cat-right-eyes;
+}
+
+@keyframes cat-right-eyes {
+    from {
+        top: 159px;
+        animation-timing-function: ease-out;
+    }
+
+    25% {
+        top: 154px;
+        left: 192px;
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        top: 169px;
+        left: 222px;
+        animation-timing-function: ease-out;
+    }
+
+    75% {
+        top: 170px;
+        left: 182px;
+        animation-timing-function: ease-out;
+
+    }
+
+    to {
+        top: 159px;
+    }
+}
+
+.cat__eye_type_left {
+    left: 109px;
+    top: 114px;
+    animation-name: cat-left-eyes;
+}
+
+@keyframes cat-left-eyes {
+    from {
+        top: 114px;
+        animation-timing-function: ease-out;
+    }
+
+    25% {
+        top: 109px;
+        left: 99px;
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        top: 119px;
+        left: 125px;
+    }
+
+    75% {
+        top: 135px;
+        left: 127px;
+    }
+
+    to {
+        top: 114px;
+    }
 }
