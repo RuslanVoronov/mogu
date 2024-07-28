@@ -3,7 +3,7 @@ import image from '../../images/img.png';
 
 function Cases() {
     return (
-        <section className="cases">
+        <section className="cases" id='cases'>
             <div className='cases__container'>
                 <div>
                     <ul className='cases__list-items'>

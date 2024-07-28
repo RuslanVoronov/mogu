@@ -8,9 +8,9 @@ function Header() {
                 <img src={logo} className='header__logo' />
                 <nav className='header__nav'>
                     <ul className='header__nav-items'>
-                        <li><a className='header__nav-item' href='#'>Кейсы</a></li>
-                        <li><a className='header__nav-item' href='#'>О нас</a></li>
-                        <li><a className='header__nav-item' href='#'>Обратная связь</a></li>
+                        <li><a className='header__nav-item' href='#cases'>Кейсы</a></li>
+                        <li><a className='header__nav-item' href='#about-us'>О нас</a></li>
+                        <li><a className='header__nav-item' href='#feedback'>Обратная связь</a></li>
                     </ul>
                 </nav>
             </div>

@@ -4,7 +4,7 @@ import cat__eye from '../../images/cat_eye.svg'
 
 function Feedback() {
     return (
-        <section className="feedback">
+        <section className="feedback" id='feedback'>
             <form className='feedback__form'>
                 <h2 className='form__title'>Обратная связь</h2>
                 <input className='form__input form__input_theme_black'></input>
