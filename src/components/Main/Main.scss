@@ -28,14 +28,6 @@
     line-height: 36px;
 }
 
-.main__dialogue {
-    width: 644px;
-    height: 644px;
-    border-radius: 30px;
-
-    background-color: #222fdc;
-}
-
 .main__form {
     display: flex;
     justify-content: space-between;
@@ -45,4 +37,40 @@
     max-width: 596px;
     box-sizing: border-box;
     overflow: hidden;
+}
+
+.dialogue-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 644px;
+    height: 644px;
+    border-radius: 30px;
+
+    background-color: #222fdc;
+}
+
+.dialogue-container__pen {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -100px;
+
+    width: 100%;
+}
+
+.dialogue-container__avatars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
