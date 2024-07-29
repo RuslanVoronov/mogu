@@ -3,9 +3,9 @@
     justify-content: center;
     text-align: left;
 
-    margin: auto;
+    padding: 50px 64px 126px;
 
-    color: #222FDC;
+    color: #222fdc;
 }
 
 .main__container {
@@ -15,33 +15,32 @@
 .main__title {
     margin: 0;
 
-    font-family: 'Oswald';
+    font-family: "Oswald";
     font-size: 90px;
     font-weight: 500;
     line-height: 80px;
 }
 
 .main__text {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-size: 22px;
     font-weight: 400;
     line-height: 36px;
 }
-
 
 .main__dialogue {
     width: 644px;
     height: 644px;
     border-radius: 30px;
 
-    background-color: #222FDC;
+    background-color: #222fdc;
 }
 
 .main__form {
     display: flex;
     justify-content: space-between;
     height: 100px;
-    border: solid 2px #222FDC;
+    border: solid 2px #222fdc;
     border-radius: 30px;
     max-width: 596px;
     box-sizing: border-box;
