@@ -24,12 +24,13 @@ function Main() {
                     </form>
                 </div>
                 <div className='dialogue-container'>
-                    <ul className='dialogue-container__avatars'>
+                    
+                    {/* <ul className='dialogue-container__avatars'>
                         <li><img className='dialogue-container__avatar' src={avatar}></img></li>
                         <li><img className='dialogue-container__avatar' src={avatar}></img></li>
                         <li><img className='dialogue-container__avatar' src={avatar}></img></li>
                         <li><img className='dialogue-container__avatar' src={avatar}></img></li>
-                    </ul>
+                    </ul> */}
                     <img className='dialogue-container__pen' alt='pen' src={pen}></img>
 
                 </div>
