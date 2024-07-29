@@ -7,8 +7,8 @@ function Feedback() {
         <section className="feedback" id='feedback'>
             <form className='feedback__form'>
                 <h2 className='form__title'>Обратная связь</h2>
-                <input className='form__input form__input_theme_black'></input>
-                <input className='form__input form__input_type_textarea form__input_theme_black'></input>
+                <input placeholder='Электронная почта' className='form__input form__input_theme_black'></input>
+                <textarea placeholder='О чём хотите рассказать?' className='form__input form__input_type_textarea form__input_theme_black'></textarea>
                 <button className='form__button form__button_theme_black'>отправить →</button>
             </form>
             <div className='feedback__cat'>

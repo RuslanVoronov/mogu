@@ -45,6 +45,11 @@
     list-style: none;
 }
 
+.cases__list-item_active {
+    background-color: #F7FF8F;
+    color: black;
+}
+
 .cases__title {
     margin: 20px 0 8px;
     font-family: "Inter";
@@ -66,12 +71,24 @@
     margin: 8px 8px 8px 0;
     width: 60vw;
     object-fit: contain;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.cases__image_unvisible {
+    opacity: 0;
+}
+
+.cases__image_visible {
+    opacity: 1; 
+    transition-delay: 2s; 
 }
 
 @media (max-width: 1024px) {
     .cases__container {
         flex-direction: column;
     }
+
     .cases__image {
         margin: auto;
         width: 100%;
