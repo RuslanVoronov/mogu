@@ -2,7 +2,10 @@ import './Main.scss';
 import Header from '../Header/Header';
 import pen from '../../images/pen.svg';
 import avatar from '../../images/avatar1.svg';
-import dialogue from '../../images/dialogue__container.png'
+import dog from '../../images/avatar_dog.png';
+import woman from '../../images/avatar_women.png';
+import man from '../../images/avatar_man.png';
+import plus from '../../images/plus.svg';
 
 function Main() {
     return (
@@ -39,10 +42,10 @@ function Main() {
                                 </div>
                             </div>
                         </li>
-                        <li><img className='dialogue-container__avatar' src={avatar}></img></li>
-                        <li><img className='dialogue-container__avatar' src={avatar}></img></li>
-                        <li><img className='dialogue-container__avatar' src={avatar}></img></li>
-                        <li><img className='dialogue-container__avatar' src={avatar}></img></li>
+                        <li><img className='dialogue-container__avatar' src={woman}></img></li>
+                        <li><img className='dialogue-container__avatar' src={dog}></img></li>
+                        <li><img className='dialogue-container__avatar' src={man}></img></li>
+                        <li><img className='dialogue-container__avatar dialogue-container__avatar_add' src={plus}></img></li>
                     </ul>
                     <img className='dialogue-container__pen' alt='pen' src={pen}></img>
 

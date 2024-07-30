@@ -53,6 +53,7 @@
 }
 
 .about-us__list-item {
+    margin: 0 12px 0;
     list-style: none;
     max-width: 307px;
 }
@@ -118,6 +119,7 @@
 }
 
 .about-us__image_computer {
+    margin-top: 24px;
     width: clamp(114px, 44%, 350px);
 }
 

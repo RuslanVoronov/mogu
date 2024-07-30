@@ -15,7 +15,7 @@
 }
 
 .main__title {
-    margin: 0;
+    margin: 24px 0 0;
 
     font-family: "Oswald";
     font-size: clamp(44px, 12vw, 90px);
@@ -56,7 +56,7 @@
 }
 
 .dialogue {
-    margin-top: 30px;
+
     width: 100%;
     max-width: 700px;
 }
@@ -82,6 +82,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
 .dialogue__message-block_place_corner {
     top: 19px;
     left: 24px;
@@ -118,7 +119,7 @@
     justify-content: center;
     position: relative;
 
-    margin-top: 30px;
+    margin: 0;
     max-width: 644px;
     width: 100%;
     aspect-ratio: 1/1;
@@ -133,6 +134,7 @@
     margin-bottom: -23%;
     width: 100%;
 }
+
 .dialogue-container__avatars {
     position: relative;
     display: flex;
@@ -153,14 +155,24 @@
     box-sizing: border-box;
 }
 
+.dialogue-container__avatar_add {
+    background-color: white;
+    padding:clamp(15px, 4vw, 25px) ;
+}
+
 @media (max-width: 1300px) {
     .main {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .main__link-arrow {
         display: none;
+    }
+
+    .dialogue-container {
+        margin-top: 30px;
     }
 }
 
@@ -175,7 +187,9 @@
 
     .dialogue-container {
         max-width: 644px;
+
     }
+
     .dialogue__message-block {
         padding: 15px;
     }
