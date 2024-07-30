@@ -2,6 +2,7 @@ import './Main.scss';
 import Header from '../Header/Header';
 import pen from '../../images/pen.svg';
 import avatar from '../../images/avatar1.svg';
+import dialogue from '../../images/dialogue__container.png'
 
 function Main() {
     return (
@@ -23,17 +24,19 @@ function Main() {
                         <button className='form__button form__button_theme_blue'>Начать →</button>
                     </form>
                 </div>
-                <div className='dialogue-container'>
-                    
+
+                <img className='dialogue' src={dialogue}></img>
+                {/* <div className='dialogue-container'> */}
+
                     {/* <ul className='dialogue-container__avatars'>
                         <li><img className='dialogue-container__avatar' src={avatar}></img></li>
                         <li><img className='dialogue-container__avatar' src={avatar}></img></li>
                         <li><img className='dialogue-container__avatar' src={avatar}></img></li>
                         <li><img className='dialogue-container__avatar' src={avatar}></img></li>
                     </ul> */}
-                    <img className='dialogue-container__pen' alt='pen' src={pen}></img>
+                    {/* <img className='dialogue-container__pen' alt='pen' src={pen}></img> */}
 
-                </div>
+                {/* </div> */}
             </section>
         </>
     );
