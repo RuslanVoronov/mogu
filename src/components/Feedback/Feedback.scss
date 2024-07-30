@@ -106,3 +106,14 @@
         width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    .feedback {
+        padding: 20px;
+    }
+
+    .feedback__form {
+        width: 100%;
+        padding: 20px 15px 34px;
+    }
+}
