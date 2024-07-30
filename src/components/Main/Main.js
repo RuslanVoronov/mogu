@@ -7,8 +7,10 @@ import woman from '../../images/avatar_women.png';
 import man from '../../images/avatar_man.png';
 import plus from '../../images/plus.svg';
 import cursor from '../../images/cursor.svg';
+import { useState } from 'react';
 
 function Main() {
+    const [clicked, setClicked] = useState()
     return (
         <>
             <Header />
@@ -52,7 +54,10 @@ function Main() {
                     <img className='dialogue-container__pen' alt='pen' src={pen}></img>
 
                 </div>
-                <a className='main__link-arrow' href='#image-page'></a>
+                <a className='main__link-arrow' href='#image-page'
+                    onClick={() => setClicked(1)}
+                    onAnimationEnd={() => setClicked(0)}
+                    clicked={clicked}></a>
             </section>
         </>
     );

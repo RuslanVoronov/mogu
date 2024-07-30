@@ -53,10 +53,18 @@
     background-image: url("../../images/arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
+    animation: bounce .4s inherit;
+}
+
+.main__link-arrow[clicked='1'] {
+    animation: bounce .4s inherit;
+  }
+
+.main__link-arrow:hover {
+    bottom: 37px;
 }
 
 .dialogue {
-
     width: 100%;
     max-width: 700px;
 }
@@ -164,7 +172,22 @@
 
 .dialogue-container__avatar_add {
     background-color: white;
-    padding:clamp(15px, 4vw, 25px) ;
+    padding: clamp(15px, 4vw, 25px);
+}
+
+
+@keyframes bounce {
+    from {
+        bottom: 37px;
+    }
+
+    50% {
+        bottom: 45px
+    }
+
+    to {
+        bottom: 37px;
+    }
 }
 
 @media (max-width: 1300px) {
