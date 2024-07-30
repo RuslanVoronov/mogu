@@ -82,12 +82,14 @@
 .cases__image_unvisible {
     opacity: 0;
     width: 0;
+    height: 0;
 }
 
 .cases__image_visible {
     opacity: 1;
     margin: 8px 8px 8px 0;
     width: 60vw;
+    
     object-fit: contain;
 }
 
