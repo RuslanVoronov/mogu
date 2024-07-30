@@ -6,7 +6,7 @@
         "yellow-card yellow-card image-hands image-hands green-card green-card"
         "image-snake image-snake image-snake image-snake image-snake image-snake";
     grid-auto-rows: auto;
-    grid-auto-columns: auto;
+    grid-auto-columns: 1fr 1fr 1fr;
 
     background-color: white;
     padding: 64px;
@@ -14,25 +14,49 @@
 }
 
 .about-us__card {
+    position: relative;
     border-radius: 30px;
+    text-align: center;
 }
 
 .about-us__title {
+    margin: 24px 24px 20px;
+
+    font-size: clamp(36px, 5vw, 78px);
     font-family: "Oswald";
-    font-size: 78px;
     font-weight: 400;
-    line-height: 80px;
-    letter-spacing: -4px;
-    text-align: center;
+    line-height: clamp(40px, 5vw, 80px);
+    letter-spacing: clamp(-1px, -3px, -4px);
 }
 
 .about-us__text {
+    margin: 0 24px 24px;
+    max-width: 865px;
+
     font-family: "Inter";
-    font-size: 44px;
+    font-size: clamp(20px, 2.5vw, 44px);
     font-weight: 400;
-    line-height: 52px;
+    line-height: clamp(22px, 2.5vw, 52px);
+
     letter-spacing: -0.10000000149011612px;
-    text-align: center;
+}
+
+.about-us__list-items {
+    display: flex;
+    align-items: center;
+
+    margin: 24px auto 40px;
+    padding: 0;
+    max-width: 1091px;
+}
+
+.about-us__list-item {
+    list-style: none;
+    max-width: 307px;
+}
+
+.about-us__list-item_arrow {
+    color: white;
 }
 
 .about-us__card_color_pink {
@@ -48,6 +72,10 @@
 }
 
 .about-us__card_color_purple {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     grid-area: purple-card;
     background: #4f23ae;
     color: #72bdf8;
@@ -67,10 +95,57 @@
     text-align: left;
 }
 
-.about-us__image_hands {
+.about-us__image-background_hands {
+    display: flex;
+    border-radius: 30px;
+    position: relative;
+    background-color: #000000;
     grid-area: image-hands;
+}
+
+.about-us__image_hands {
+    display: none;
+    margin: auto -160px auto -80px;
+}
+
+.about-us__image_computer {
+    width: clamp(114px, 44%, 350px);
+}
+
+.about-us__image_arms {
+    width: 100%;
+}
+
+.about-us__image_note {
+    width: clamp(210px, 46%, 400px);
 }
 
 .about-us__image_snake {
     grid-area: image-snake;
+    width: 76vw;
+    margin: auto;
+}
+
+@media (max-width:768px) {
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+
+        padding: 40px 20px;
+    }
+
+    .about-us__card {
+        max-width: 400px;
+        margin-bottom: 10px;
+    }
+
+    .about-us__list-items {
+        flex-direction: column;
+    }
+
+    .about-us__list-item_arrow {
+        transform: rotate(90deg);
+    }
 }

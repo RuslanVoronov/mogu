@@ -26,9 +26,10 @@ function Cases() {
             img.classList.remove('cases__image_unvisible')
         }
         if (link.target.id === "growth") {
-            setScreen(image1)
+            
             img.classList.add('cases__image_visible')
             img.classList.remove('cases__image_unvisible')
+            setScreen(image1)
         }
         if (link.target.id === "creatime") {
             setScreen(image)
