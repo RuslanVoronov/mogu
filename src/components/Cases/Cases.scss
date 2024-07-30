@@ -46,7 +46,7 @@
 }
 
 .cases__list-item_active {
-    background-color: #F7FF8F;
+    background-color: #f7ff8f;
     color: black;
 }
 
@@ -68,19 +68,27 @@
 }
 
 .cases__image {
-    margin: 8px 8px 8px 0;
-    width: 60vw;
-    object-fit: contain;
     opacity: 0;
-    transition: opacity 2s;
+    transition:
+        width .2s,
+        height .2s,
+        opacity 2s;
+}
+
+.cases__image-container {
+    position: relative;
 }
 
 .cases__image_unvisible {
     opacity: 0;
+    width: 0;
 }
 
 .cases__image_visible {
     opacity: 1;
+    margin: 8px 8px 8px 0;
+    width: 60vw;
+    object-fit: contain;
 }
 
 @media (max-width: 1024px) {
@@ -89,7 +97,7 @@
         border-radius: 20px;
     }
 
-    .cases__image {
+    .cases__image_visible {
         margin: 5px;
         width: calc(100% - 10px);
         border-radius: 20px;
@@ -113,5 +121,4 @@
     .cases__list-items {
         gap: 14px;
     }
-
 }
