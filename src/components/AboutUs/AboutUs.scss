@@ -99,14 +99,22 @@
 
 .about-us__image-background_hands {
     display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 30px;
     position: relative;
     background-color: #000000;
     grid-area: image-hands;
 }
 
+.about-us__image-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .about-us__image_hands {
-    width: 100%;
+    width: 130%;
 }
 
 .about-us__image_computer {
@@ -149,5 +157,8 @@
 
     .about-us__list-item_arrow {
         transform: rotate(90deg);
+    }
+    .about-us__image_hands {
+        width: 110%;
     }
 }

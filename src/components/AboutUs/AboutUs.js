@@ -1,6 +1,7 @@
 import './AboutUs.scss'
 import snake from '../../images/snake.png';
 import hands from '../../images/hands.svg';
+import smallHands from '../../images/small-hands.svg'
 import computer from '../../images/computer.png';
 import arms from '../../images/hands.png';
 import note from '../../images/note.png';
@@ -36,7 +37,10 @@ function AboutUs() {
                 <p className='about-us__text'>приглашайте коллег, бизнес-партнеров и заказчиков</p>
             </div>
             <div className='about-us__card about-us__image-background_hands'>
-                <img className='about-us__image_hands' src={hands}></img>
+                <picture className='about-us__image-block'>
+                    <source className='about-us__image_hands' srcset={hands} media="(min-width: 768px)" />
+                    <img className='about-us__image_hands' src={smallHands}></img>
+                </picture>
             </div>
             <div className='about-us__card about-us__card_color_green'>
                 <h2 className='about-us__title'>Настройка под вас</h2>

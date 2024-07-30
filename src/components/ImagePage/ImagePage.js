@@ -7,7 +7,7 @@ import manWithU from '../../images/man-u.svg'
 
 function ImagePage() {
     return (
-        <section className='image-page'>
+        <section className='image-page' id='image-page'>
             <ul className='image-page__list'>
                 <li className='image-page__list-item'><img className='image-page__man' src={manWithM}></img></li>
                 <li className='image-page__list-item'><img className='image-page__man' src={manWithO}></img></li>

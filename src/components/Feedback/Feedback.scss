@@ -110,10 +110,14 @@
 @media (max-width: 768px) {
     .feedback {
         padding: 20px;
+        height: 800px;
     }
 
     .feedback__form {
         width: 100%;
         padding: 20px 15px 34px;
+    }
+    .cat__eye {
+        display: none;
     }
 }

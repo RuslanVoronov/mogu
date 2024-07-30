@@ -25,7 +25,6 @@ function Main() {
                     </form>
                 </div>
 
-                {/* <img className='dialogue' src={dialogue}></img> */}
                 <div className='dialogue-container'>
                     <div className='dialogue__message-block dialogue__message-block_place_corner'><p className='dialogue__message-text'>Совместная работа</p></div>
                     <div className='dialogue__message-block dialogue__message-block_place_over-avatars'><p className='dialogue__message-text dialogue__message-text_color_orange'>Это ваш милейший коллега </p></div>
@@ -45,6 +44,7 @@ function Main() {
                     <img className='dialogue-container__pen' alt='pen' src={pen}></img>
 
                 </div>
+                <a className='main__link-arrow' href='#image-page'></a>
             </section>
         </>
     );
