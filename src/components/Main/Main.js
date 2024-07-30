@@ -27,8 +27,11 @@ function Main() {
 
                 <div className='dialogue-container'>
                     <div className='dialogue__message-block dialogue__message-block_place_corner'><p className='dialogue__message-text'>Совместная работа</p></div>
-                    <div className='dialogue__message-block dialogue__message-block_place_over-avatars'><p className='dialogue__message-text dialogue__message-text_color_orange'>Это ваш милейший коллега </p></div>
                     <ul className='dialogue-container__avatars'>
+                        <div className='dialogue__message-block dialogue__message-block_place_over-avatars'>
+                            <p className='dialogue__message-text dialogue__message-text_color_orange'>Это ваш милейший коллега </p>
+                            <span className='dialogue__block-rectangle'></span>
+                        </div>
                         <li>
                             <div><img className='dialogue-container__avatar' src={avatar}></img>
                                 <div className='dialogue__message-block dialogue__message-block_place_under-avatars'>

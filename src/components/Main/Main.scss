@@ -70,13 +70,25 @@
     background-color: white;
 }
 
+.dialogue__block-rectangle {
+    position: absolute;
+
+    bottom: -15%;
+    left: 50%;
+    display: block;
+    background-image: url("../../images/Rectangle.svg");
+    width: clamp(12px, 1.4vw, 20px);
+    height: clamp(12px, 1.4vw, 20px);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 .dialogue__message-block_place_corner {
     top: 19px;
     left: 24px;
 }
 
 .dialogue__message-block_place_over-avatars {
-    top: clamp(64px, 16.8vw, 140px);
+    bottom: clamp(87px, 20vw, 145px);
     padding: 8px 24px;
 }
 
