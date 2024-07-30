@@ -25,18 +25,26 @@ function Main() {
                     </form>
                 </div>
 
-                <img className='dialogue' src={dialogue}></img>
-                {/* <div className='dialogue-container'> */}
+                {/* <img className='dialogue' src={dialogue}></img> */}
+                <div className='dialogue-container'>
+                    <div className='dialogue__message-block dialogue__message-block_place_corner'><p className='dialogue__message-text'>Совместная работа</p></div>
+                    <div className='dialogue__message-block dialogue__message-block_place_over-avatars'><p className='dialogue__message-text dialogue__message-text_color_orange'>Это ваш милейший коллега </p></div>
+                    <ul className='dialogue-container__avatars'>
+                        <li>
+                            <div><img className='dialogue-container__avatar' src={avatar}></img>
+                                <div className='dialogue__message-block dialogue__message-block_place_under-avatars'>
+                                    <p className='dialogue__message-text'>А это вы</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li><img className='dialogue-container__avatar' src={avatar}></img></li>
+                        <li><img className='dialogue-container__avatar' src={avatar}></img></li>
+                        <li><img className='dialogue-container__avatar' src={avatar}></img></li>
+                        <li><img className='dialogue-container__avatar' src={avatar}></img></li>
+                    </ul>
+                    <img className='dialogue-container__pen' alt='pen' src={pen}></img>
 
-                    {/* <ul className='dialogue-container__avatars'>
-                        <li><img className='dialogue-container__avatar' src={avatar}></img></li>
-                        <li><img className='dialogue-container__avatar' src={avatar}></img></li>
-                        <li><img className='dialogue-container__avatar' src={avatar}></img></li>
-                        <li><img className='dialogue-container__avatar' src={avatar}></img></li>
-                    </ul> */}
-                    {/* <img className='dialogue-container__pen' alt='pen' src={pen}></img> */}
-
-                {/* </div> */}
+                </div>
             </section>
         </>
     );
