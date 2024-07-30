@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './App.scss'
 import Feedback from '../Feedback/Feedback';
 import Main from '../Main/Main';
@@ -8,16 +9,18 @@ import AboutUs from '../AboutUs/AboutUs';
 
 function App() {
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+    useEffect(() => {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
 
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
-    });
-    
+    }, []);
+
     return (
         <div className="App">
             <Main />
