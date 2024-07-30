@@ -7,6 +7,17 @@ import ImagePage from '../ImagePage/ImagePage';
 import AboutUs from '../AboutUs/AboutUs';
 
 function App() {
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    
     return (
         <div className="App">
             <Main />
