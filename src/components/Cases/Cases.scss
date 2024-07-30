@@ -39,9 +39,9 @@
     background-color: white;
     color: #5b605c;
     font-family: "Inter";
-    font-size: 16px;
+    font-size: clamp(14px, 3.5vw, 16px);
     font-weight: 500;
-    line-height: 48px;
+    line-height: clamp(41px, 45px, 48px);
     list-style: none;
 }
 
@@ -53,7 +53,7 @@
 .cases__title {
     margin: 20px 0 8px;
     font-family: "Inter";
-    font-size: 32px;
+    font-size: clamp(24px, 1.5vw, 32px);
     font-weight: 500;
     line-height: 48px;
 }
@@ -61,9 +61,9 @@
 .cases__text {
     margin: 0;
     font-family: "Inter";
-    font-size: 22px;
+    font-size: clamp(16px, 1.5vw, 22px);
     font-weight: 400;
-    line-height: 36px;
+    line-height: clamp(30px, 1.5vw, 36px);
     color: #5b605c;
 }
 
@@ -80,17 +80,39 @@
 }
 
 .cases__image_visible {
-    opacity: 1; 
-    transition-delay: 2s; 
+    opacity: 1;
+    transition-delay: 2s;
 }
 
 @media (max-width: 1024px) {
     .cases__container {
         flex-direction: column;
+        border-radius: 20px;
     }
 
     .cases__image {
-        margin: auto;
-        width: 100%;
+        margin: 5px;
+        width: calc(100% - 10px);
+        border-radius: 20px;
     }
+}
+
+@media (max-width: 768px) {
+    .cases {
+        padding: 30px 20px 140px;
+    }
+
+    .cases__container div {
+        padding: 15px;
+    }
+
+    .cases__list-item {
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    .cases__list-items {
+        gap: 14px;
+    }
+
 }

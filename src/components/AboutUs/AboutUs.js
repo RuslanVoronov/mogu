@@ -35,7 +35,7 @@ function AboutUs() {
                     работа на одной доске</h2>
                 <p className='about-us__text'>приглашайте коллег, бизнес-партнеров и заказчиков</p>
             </div>
-            <div className='about-us__image-background_hands'>
+            <div className='about-us__card about-us__image-background_hands'>
                 <img className='about-us__image_hands' src={hands}></img>
             </div>
             <div className='about-us__card about-us__card_color_green'>
