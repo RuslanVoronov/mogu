@@ -6,6 +6,7 @@ import dog from '../../images/avatar_dog.png';
 import woman from '../../images/avatar_women.png';
 import man from '../../images/avatar_man.png';
 import plus from '../../images/plus.svg';
+import cursor from '../../images/cursor.svg';
 
 function Main() {
     return (
@@ -37,6 +38,7 @@ function Main() {
                         </div>
                         <li>
                             <div><img className='dialogue-container__avatar' src={avatar}></img>
+                                <img className='dialogue-container__cursor' src={cursor} />
                                 <div className='dialogue__message-block dialogue__message-block_place_under-avatars'>
                                     <p className='dialogue__message-text'>А это вы</p>
                                 </div>

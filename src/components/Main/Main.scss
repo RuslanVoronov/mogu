@@ -155,6 +155,13 @@
     box-sizing: border-box;
 }
 
+.dialogue-container__cursor {
+    position: absolute;
+    bottom: 3%;
+    left: 14%;
+    height: 20px;
+}
+
 .dialogue-container__avatar_add {
     background-color: white;
     padding:clamp(15px, 4vw, 25px) ;
